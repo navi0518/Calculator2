@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;600&family=Skranji&family=Varela+Round&display=swap");
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: "Skranji", cursive;
+  background-color: rgb(224, 224, 221);
+}
+
+.button {
+  padding: 20px;
+  margin: 0 2px;
+  /* border: 2px solid black; */
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  width: 66px;
+  box-shadow: -5px -5px 12px #ffff, 5px 5px 12px rgba(0, 0, 0, 0.16);
+  width: 66px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.calculator {
+  display: flex;
+  flex-direction: column;
+  background-color: #ecf0f3;
+  width: 21vw;
+  padding: 15px;
+  border-radius: 30px;
+  box-shadow: -5px -5px 12px #ffff, 5px 5px 12px rgba(0, 0, 0, 0.16);
+  grid-template-columns: repeat(4, 68px);
+}
+
+.row {
+  margin: 7px 0;
+}
+
+.row input {
+  margin: 0;
+  padding: 10px 0;
+  /* border: 2px solid black; */
+  border: none;
+  text-align: end;
+  border-radius: 7px;
+  font-size: 21px;
+  box-shadow: inset -5px -5px 12px #ffff, inset 5px 5px 12px rgba(0, 0, 0, 0.16);
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 480px) {
+  .calculator {
+    width: 83vw;
+  }
+}
+
+/* Media Query for low resolution  Tablets, Ipads */
+@media (min-width: 481px) and (max-width: 767px) {
+  .calculator {
+    width: 83vw;
+  }
+}
+
+/* Media Query for Tablets Ipads portrait mode */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .calculator {
+    width: 40vw;
+  }
+}
